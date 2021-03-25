@@ -4,7 +4,7 @@ WORKDIR /build
 
 COPY . .
 
-RUN mvn install
+RUN mvn clean install
 
 FROM openjdk:8-jre-alpine3.9
 
